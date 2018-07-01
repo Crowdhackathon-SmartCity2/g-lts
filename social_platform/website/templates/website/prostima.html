@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>AdminLTE 3 | Starter</title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="css/adminlte.css">
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+    <!-- My platform style.  -->
+    <link rel="stylesheet" href="css/platform.css">
+
+
+
+  </head
+
+  <body class="hold-transition sidebar-mini">
+
+
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">              </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <ul class="navbar-nav mr-auto">
+    <li class="nav-item active">
+      <a class="nav-link" href="index.html">Αρχική <span class="sr-only">(current)</span></a>
+    </li>
+
+    <!-- Αρχη dropdown -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Δράσεις
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="order-without-middleman.html">Παραγγελίες χωρίς μεσάζοντα</a>
+        <a class="dropdown-item" href="pliromesdimou.html">Πληρωμές προς το δήμο</a>
+        <a class="dropdown-item" href="#">Αναφορές στο δήμο</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="orders_from_supermarkets.html">Αγορές</a>
+        <a class="dropdown-item" href="#">Δωρεές</a>
+      </div>
+    </li>
+    <!-- Τελος dropdown -->
+
+    <li class="nav-item">
+      <a class="nav-link" href="orders.html">Παραγγελίες</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Επικοινωνία</a>
+    </li>
+
+  </ul>
+
+
+  <!-- Φωτογραφία προφιλ -->
+  <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+      <div class="image">
+        <img src="img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+      </div>
+      <div class="info">
+        <a href="#" class="d-block">Alexander Pierce</a>
+        AΔΤ: AK 3942
+      </div>
+    </div>
+  </div>
+  </nav>
+
+      <!-- Main Sidebar Container -->
+
+<div class="container">
+
+
+  <!-- Τίτλος -->
+  <br><br>
+  <div align=center>
+    <h1 class="m-0 text-dark">Οφείλες προς το δήμο:</h1>
+  </div>
+  <br><br>
+
+      <!-- Λογότυπο -->
+
+  <div class="logo">
+    <div class="image">
+      <img src="img/policeman-fine-icon-drawing_csp45737492.jpg" width="220" height="220" class="img-circle elevation-2" alt="Prostima">
+    </div>
+  </div>
+
+
+      <!-- Πίνακας -->
+
+
+  <div class="table-payments">
+    <table class="table table-sm">
+      <thead>
+        <tr>
+          <th scope="col">Περιγραφή παράβασης Κ.Ο.Κ</th>
+          <th scope="col">Πρόστιμο</th>
+          <th scope="col">Βαθμοί P.S</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th> Μη χρήση ζωνών ασφαλείας σε παιδιά κάτω των 12 ετών στο μπροστινό κάθισμα ή και να μη χρησιμοποιεί ο οδηγός ή και να μην χρησιμοποιεί ο επιβάτης </th>
+          <td>350 €</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <th scope="row">Σύνολο</th>
+          <td></td>
+          <td>350 €</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+  </div>
+
+
+
+
+
+    <!--Κουμπί  -->
+  <div class="paybutton">
+    <button id="pay_order" type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">Πληρωμή</button>
+  </div>
+
+  <!-- Modal -->
+  <div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5>Παρακαλούμε επιλέξτε τον τρόπο πληρωμής :</h5>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div align=center>
+            <a data-toggle="collapse" href="#mycollapse" role="button" aria-expanded="false" aria-controls="collapseExample">
+              <img src="img/credit/mastercard.png">
+            </a>
+            <a data-toggle="collapse" href="#mycollapse" role="button" aria-expanded="false" aria-controls="collapseExample">
+              <img src="img/credit/nbg.jpg" width=32px height=32px>
+            </a>
+            <a data-toggle="collapse" href="#mycollapse" role="button" aria-expanded="false" aria-controls="collapseExample">
+              <img src="img/credit/paypal2.png">
+            </a>
+          </div>
+          <div class="collapse" id="mycollapse">
+            <div class="card card-body" align=center>
+              <p>Το συνολικό ποσό που οφείλετε είναι 350 €.</p>
+              <button id="pay_order" type="button" class="btn btn-success" onClick="window.location.href='payment-complete.html' ">Πληρωμή</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+</div>
+
+<br><br><br>
+
+<!-- Νίκος : Code for footer -->
+<div class="fixed-bottom">
+  <div class="fixed-bottom">
+    <footer class="main-footer">
+      <!-- To the right -->
+        <div class="float-right d-none d-sm-inline">
+
+          <img src="img/credit/mastercard.png">
+          <img src="img/credit/nbg.jpg" width=32px height=32px>
+          <img src="img/credit/paypal2.png">
+        </div>
+        <!-- Default to the left -->
+        <strong>Demo platform for the smartcity 2 Hackathon. <a href="https://github.com/Crowdhackathon-SmartCity2/g-lts"; target="_blank">G-lts Team</a>. Copyleft 2018 <span class="copyleft">&copy;</span></strong> All rights reserved.
+    </footer>
+
+  </div>
+
+</div>
+
+
+    <!-- REQUIRED SCRIPTS -->
+
+    <!-- jQuery -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="js/adminlte.js"></script>
+    <!-- AdminLTE App -->
+    <script src="js/Chart.js/Chart.js"></script>
+    <script src="js/myjavascript.js"></script>
+  </body>
+</html>

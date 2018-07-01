@@ -1,0 +1,31 @@
+#no-side-space
+{
+  padding: 0px;
+  margin: 0px;
+}
+
+.inline-div
+{
+ 	display: inline-block;
+ 	width: 270px;
+}
+
+
+.nav-height
+{
+	height: 80px;
+  /*padding-bottom: 0px;*/
+  margin-bottom: 15px;
+}
+
+.alexander-img-size
+{
+	height: 1000px;
+	width: 1000px;
+}
+
+/*.my-cont
+{
+  padding-top: 0px;
+  margin-top: 0px;
+}*/
